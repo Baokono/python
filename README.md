@@ -5,11 +5,11 @@ import telebot
 import requests
 from telebot import types
 
-bot = telebot.TeleBot("Ключ Телеграмм")
+bot = telebot.TeleBot("6247192660:AAGux1kWTfOF1-lRKbGNmXPQ1GZXHT27hUM")
 
 min_diff = 0.05
 
-api_key = "Ключ CoinMarketCap"  # Ваш API ключ от CoinMarketCap
+api_key = "7515a96b-7641-497e-8694-9b293f144b7e"  # Ваш API ключ от CoinMarketCap
 
 
 @bot.message_handler(commands=['start'])
@@ -85,4 +85,5 @@ def arbitrage(message):
             bot.send_message(message.chat.id, msg)
 
 bot.polling()
+
 """""""""""""""""""""""""""""""""""""""""""""""""
